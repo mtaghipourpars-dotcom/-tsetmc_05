@@ -1,0 +1,26 @@
+name: public-tsetmc-live-probe
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - market_data_service/scripts/probe_public_tsetmc.py
+      - .github/workflows/tsetmc-live-probe.yml
+permissions:
+  contents: read
+jobs:
+  public-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install httpx==0.28.1
+      - name: Probe public endpoints without credentials
+        run: python market_data_service/scripts/probe_public_tsetmc.py
+      - name: Upload source connectivity report
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-tsetmc-probe
+          path: public-tsetmc-probe.json
