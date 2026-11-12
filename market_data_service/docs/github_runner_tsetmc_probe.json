@@ -1,0 +1,71 @@
+{
+  "environment": "GitHub Actions runner",
+  "api_key_used": false,
+  "calls": [
+    {
+      "host": "https://cdn.tsetmc.com",
+      "endpoint": "market_watch",
+      "path": "/api/ClosingPrice/GetMarketWatch",
+      "checked_at": "2026-11-12T12:09:37.539253+00:00",
+      "error_kind": "ConnectTimeout",
+      "data_received": false
+    },
+    {
+      "host": "https://cdn.tsetmc.com",
+      "endpoint": "client_all",
+      "path": "/api/ClientType/GetClientTypeAll",
+      "checked_at": "2026-11-12T12:09:37.540129+00:00",
+      "error_kind": "ConnectTimeout",
+      "data_received": false
+    },
+    {
+      "host": "https://cdn.tsetmc.com",
+      "endpoint": "indices",
+      "path": "/api/Index/GetIndexB1LastAll/SelectedIndexes/1",
+      "checked_at": "2026-11-12T12:10:14.056417+00:00",
+      "error_kind": "ConnectTimeout",
+      "data_received": false
+    },
+    {
+      "host": "https://cdn.tsetmc.com",
+      "endpoint": "price_history",
+      "path": "/api/ClosingPrice/GetClosingPriceDailyList/35425587644337450/0",
+      "checked_at": "2026-11-12T12:10:14.056799+00:00",
+      "error_kind": "ConnectTimeout",
+      "data_received": false
+    },
+    {
+      "host": "https://cdn10.tsetmc.com",
+      "endpoint": "market_watch",
+      "path": "/api/ClosingPrice/GetMarketWatch",
+      "checked_at": "2026-11-12T12:10:50.102006+00:00",
+      "error_kind": "ConnectError",
+      "data_received": false
+    },
+    {
+      "host": "https://cdn10.tsetmc.com",
+      "endpoint": "client_all",
+      "path": "/api/ClientType/GetClientTypeAll",
+      "checked_at": "2026-11-12T12:10:50.102407+00:00",
+      "error_kind": "ConnectError",
+      "data_received": false
+    },
+    {
+      "host": "https://cdn10.tsetmc.com",
+      "endpoint": "indices",
+      "path": "/api/Index/GetIndexB1LastAll/SelectedIndexes/1",
+      "checked_at": "2026-11-12T12:10:50.400901+00:00",
+      "error_kind": "ConnectError",
+      "data_received": false
+    },
+    {
+      "host": "https://cdn10.tsetmc.com",
+      "endpoint": "price_history",
+      "path": "/api/ClosingPrice/GetClosingPriceDailyList/35425587644337450/0",
+      "checked_at": "2026-11-12T12:10:50.401233+00:00",
+      "error_kind": "ConnectError",
+      "data_received": false
+    }
+  ],
+  "any_data_received": false
+}

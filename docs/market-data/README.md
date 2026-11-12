@@ -13,6 +13,7 @@
 | گزارش HTTP و PostgreSQL واقعی | [runtime_verification.json](../../market_data_service/docs/runtime_verification.json) |
 | آزمون‌های واقعی PostgreSQL | [test_output_postgresql.txt](../../market_data_service/docs/test_output_postgresql.txt) |
 | نتایج داده تاریخی موجود مخزن | [repository_import_result.json](../../market_data_service/docs/repository_import_result.json) |
+| آزمون شبکه مستقل گیت‌هاب | [github_runner_tsetmc_probe.json](../../market_data_service/docs/github_runner_tsetmc_probe.json) |
 | نتایج مسیرهای اتصال بیرونی | [upstream_probe_results.json](../../market_data_service/docs/upstream_probe_results.json) |
 | مجوز و مراجع inventory | [THIRD_PARTY_NOTICES](../../market_data_service/docs/THIRD_PARTY_NOTICES.txt) |
 
