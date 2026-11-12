@@ -105,3 +105,18 @@ market_observations = Table('market_observations', metadata,
     Column('date_shamsi', String(10), index=True), Column('time_shamsi', String(8), nullable=False, default=''),
     Column('data_class', String(20), nullable=False), Column('quality', JSON_TYPE, nullable=False),
     Column('raw', JSON_TYPE, nullable=False), Column('recorded_at', DateTime(timezone=True),default=now))
+
+collection_jobs = Table('collection_jobs', metadata,
+    Column('id', BIG, primary_key=True), Column('source', String(40), nullable=False),
+    Column('scope', String(20), nullable=False), Column('symbols', JSON_TYPE, nullable=False),
+    Column('options', JSON_TYPE, nullable=False), Column('status', String(30), nullable=False, index=True),
+    Column('last_error', String(150)), Column('created_at', DateTime(timezone=True), default=now, nullable=False),
+    Column('updated_at', DateTime(timezone=True), default=now, nullable=False))
+collection_tasks = Table('collection_tasks', metadata,
+    Column('id', BIG, primary_key=True), Column('job_id', BIG, ForeignKey('collection_jobs.id'), nullable=False,index=True),
+    Column('task_key', String(64), nullable=False), Column('kind', String(30), nullable=False),
+    Column('endpoint', String(200), nullable=False), Column('symbol', String(100)),
+    Column('params', JSON_TYPE, nullable=False), Column('status', String(30), nullable=False,index=True),
+    Column('result', JSON_TYPE), Column('error_kind', String(150)), Column('attempts', Integer, nullable=False,default=0),
+    Column('updated_at', DateTime(timezone=True), default=now, nullable=False),
+    UniqueConstraint('job_id','task_key'))

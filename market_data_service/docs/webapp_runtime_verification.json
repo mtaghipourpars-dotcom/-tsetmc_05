@@ -1,0 +1,82 @@
+{
+  "postgres_version": "PostgreSQL 16.2 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.2.1 20210130 (Red Hat 10.2.1-11), 64-bit",
+  "local_http_checks": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/static/app.css",
+      "status": 200
+    },
+    {
+      "path": "/static/app.js",
+      "status": 200
+    },
+    {
+      "path": "/health",
+      "status": 200,
+      "total": null
+    },
+    {
+      "path": "/docs",
+      "status": 200
+    },
+    {
+      "path": "/openapi.json",
+      "status": 200,
+      "total": null
+    },
+    {
+      "path": "/api/dashboard",
+      "status": 200,
+      "total": null
+    },
+    {
+      "path": "/api/stocks",
+      "status": 200,
+      "total": 8
+    },
+    {
+      "path": "/api/stocks/عیار",
+      "status": 200,
+      "total": null
+    },
+    {
+      "path": "/api/tsetmc/catalog",
+      "status": 200,
+      "total": 136
+    },
+    {
+      "path": "/api/collections",
+      "status": 200,
+      "total": null
+    },
+    {
+      "path": "/api/symbols/عیار/history?limit=2",
+      "status": 200,
+      "total": 1982
+    },
+    {
+      "path": "/api/data/price_history?limit=2",
+      "status": 200,
+      "total": 10227
+    }
+  ],
+  "scheduler_started": true,
+  "collector_started": true,
+  "historical_records_imported": 10227,
+  "collection_job": {
+    "id": 1,
+    "status": "paused",
+    "counts": {
+      "failed": 1,
+      "queued": 24
+    },
+    "total": 25,
+    "done": 1,
+    "last_error": "tsetmc_server"
+  },
+  "upstream_verified": false,
+  "services_running_at_check": true
+}

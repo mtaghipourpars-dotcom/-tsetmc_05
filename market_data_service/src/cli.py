@@ -17,7 +17,17 @@ async def run(args):
     client = BrsClient(settings)
     service = SyncService(engine, client)
     try:
-        if args.command == 'import-repository':
+        if args.command == 'initialize-webapp':
+            from src.services.import_repository import import_history
+            from src.repositories.models import collection_jobs
+            from sqlalchemy import select,func
+            print(json.dumps(import_history(engine,args.directory),ensure_ascii=False))
+            with engine.connect() as conn:
+                existing=conn.execute(select(func.count()).select_from(collection_jobs)).scalar_one()
+            if not existing:
+                from src.services.collection import Collections
+                print(json.dumps({'collection_id':Collections(engine,None,None).create('tsetmc','all')}))
+        elif args.command == 'import-repository':
             from src.services.import_repository import import_history
             print(json.dumps(import_history(engine,args.directory),ensure_ascii=False,indent=2))
         elif args.command == 'phase':
@@ -74,6 +84,8 @@ async def run(args):
 def main():
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest='command', required=True)
+    initialize = sub.add_parser('initialize-webapp')
+    initialize.add_argument('directory')
     imp = sub.add_parser('import-repository')
     imp.add_argument('directory')
     phase = sub.add_parser('phase')

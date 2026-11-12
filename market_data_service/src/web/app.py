@@ -3,7 +3,9 @@ from decimal import Decimal
 from secrets import compare_digest
 from typing import Annotated, Literal, Any
 from fastapi import FastAPI, Depends, Header, HTTPException, Query
-from fastapi.responses import RedirectResponse
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path
 from fastapi.encoders import jsonable_encoder
 from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy import select, text, func
@@ -44,7 +46,7 @@ def create_app(settings=None, engine=None, client=None, tse_client=None):
         await tse_client.close()
         engine.dispose()
 
-    app = FastAPI(title='Iran Market Data API', version='2.0.0', lifespan=lifespan,
+    app = FastAPI(title='Iran Market Data API', version='3.0.0', lifespan=lifespan,
                   description='Read stored BrsApi data. Monetary values are serialized as decimal strings. No upstream calls on GET.')
     app.state.engine = engine
 
@@ -86,7 +88,7 @@ def create_app(settings=None, engine=None, client=None, tse_client=None):
 
     @app.get('/', include_in_schema=False)
     def root():
-        return RedirectResponse('/docs')
+        return FileResponse(Path(__file__).with_name('static') / 'index.html')
 
     @app.get('/health')
     def health():
@@ -209,6 +211,12 @@ def create_app(settings=None, engine=None, client=None, tse_client=None):
         with engine.connect() as conn:
             return response(page(conn, market_observations, conditions, limit, offset))
 
+    from src.services.collection import Collections
+    from src.web.dashboard import router_for
+    queue = Collections(engine, tse_service, service)
+    app.state.collections = queue
+    app.include_router(router_for(engine, queue, read_auth, admin_auth, settings))
+    app.mount('/static', StaticFiles(directory=Path(__file__).with_name('static')), name='static')
     return app
 
 

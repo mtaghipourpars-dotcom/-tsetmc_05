@@ -1,8 +1,16 @@
-# سرویس داده بازار ایران — نسخه ۲
+# دیدبان — وب‌اپ و پایگاه داده بازار ایران، نسخه ۳
 
 TSETMC/TSE منبع اصلی است. پوشش ۱۶ دسته BrsApi نسخه قبل و امکان fallback حفظ شده است. این سرویس در کنار پروژه پژوهشی قرار دارد و موتورهای معاملاتی مخزن را تغییر نمی‌دهد.
 
 PostgreSQL 16.2، FastAPI و Scheduler واقعاً اجرا شدند. ۱۰٬۲۲۷ رکورد هشت فایل تاریخی مخزن وارد بانک و از HTTP بازیابی شد؛ این داده‌ها با source=repository و برچسب HISTORICAL ثبت شده‌اند. دریافت زنده upstream در این محیط موفق نشده است؛ [گزارش اجرا](docs/LIVE_VALIDATION_FA.md) و [شواهد ماشینی](docs/runtime_verification.json) را ببینید. اجرای محیط موقت، استقرار دائمی برای رایانه شما نیست.
+
+## پنل وب
+
+پس از اجرا، صفحه اصلی در http://localhost:8000 پنل فارسی است. صفحات نمادها، مرکز همگام‌سازی، کاوش داده‌ها و منابع، به بانک واقعی متصل‌اند. مستندات API همچنان در /docs هستند.
+
+برای Windows، در پوشه market_data_service فایل start.bat را اجرا کنید. Python 3.12 برای ساخت تنظیمات اولیه و Docker Desktop برای سرویس‌ها لازم‌اند. setup_env.py کلید مدیریت تصادفی می‌سازد و تنظیمات قبلی را حفظ می‌کند. کلید مدیریت ADMIN_TOKEN در فایل .env شخصی برای شروع/مکث/ادامه دریافت در پنل استفاده می‌شود؛ این کلید با BRS_API_KEY متفاوت است.
+
+در اولین راه‌اندازی، فایل‌های واقعی Data وارد و یک کار دریافت همه نمادها در صف ذخیره می‌شود. collector از صف بانک می‌خواند؛ قطع مرورگر کار را حذف نمی‌کند. [راهنمای وب‌اپ و محدوده جمع‌آوری](docs/WEB_APP_GUIDE_FA.md).
 
 ## اجرای محلی
 
@@ -12,7 +20,7 @@ Docker Desktop را اجرا کنید. در این پوشه `.env.example` را 
 docker compose up -d --build
 ```
 
-در Windows از `start.bat` و در Linux/macOS از `./start.sh` نیز می‌توانید استفاده کنید. [Swagger](http://localhost:8000/docs)، [سلامت](http://localhost:8000/health) و [کاتالوگ](http://localhost:8000/api/tsetmc/catalog) باز می‌شوند. `docker compose down` داده volume را حفظ می‌کند.
+در Windows از `start.bat` و در Linux/macOS از `./start.sh` نیز می‌توانید استفاده کنید. این دو ابتدا تنظیمات محلی را با Python آماده می‌کنند. [Swagger](http://localhost:8000/docs)، [سلامت](http://localhost:8000/health) و [کاتالوگ](http://localhost:8000/api/tsetmc/catalog) باز می‌شوند. `docker compose down` داده volume را حفظ می‌کند.
 
 کد عمومی حاوی کلید خصوصی نیست. کلید BrsApi فقط در `.env` شخصی تنظیم شود؛ TSETMC به این کلید نیاز ندارد. فایل env از Git و image کنار گذاشته شده است.
 
@@ -120,7 +128,9 @@ import برنامه دریافت شبکه شروع نمی‌کند. زمان‌�
 
 ## مستندات
 
-- [گزارش اجرای واقعی](docs/LIVE_VALIDATION_FA.md)
+- [راهنمای وب‌اپ](docs/WEB_APP_GUIDE_FA.md)
+- [گزارش اجرای نسخه ۳](docs/WEB_APP_VALIDATION_FA.md)
+- [گزارش اجرای نسخه ۲](docs/LIVE_VALIDATION_FA.md)
 - [کاتالوگ TSETMC/TSE](docs/TSETMC_CATALOG_FA.md)
 - [قرارداد BrsApi](docs/API_CONTRACT_FA.md)
 - [OpenAPI](docs/openapi.json)

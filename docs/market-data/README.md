@@ -4,6 +4,8 @@
 
 | موضوع | فایل |
 |---|---|
+| راهنمای وب‌اپ دیدبان | [WEB_APP_GUIDE_FA](../../market_data_service/docs/WEB_APP_GUIDE_FA.md) |
+| اعتبارسنجی نسخه ۳ | [WEB_APP_VALIDATION_FA](../../market_data_service/docs/WEB_APP_VALIDATION_FA.md) |
 | راه‌اندازی، تنظیمات، CLI و API | [README](../../market_data_service/README.md) |
 | گزارش واقعی بانک، سرویس و upstream | [LIVE_VALIDATION_FA](../../market_data_service/docs/LIVE_VALIDATION_FA.md) |
 | ۱۳۶ مسیر شناسایی‌شده، ۱۹ خانواده | [TSETMC_CATALOG_FA](../../market_data_service/docs/TSETMC_CATALOG_FA.md) |

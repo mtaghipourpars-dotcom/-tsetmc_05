@@ -2,7 +2,8 @@
 import hashlib
 from pathlib import Path
 from src.repositories.models import raw_responses,sync_errors
-from src.services.mapper import map_rows
+from src.services.mapper import map_rows,ensure_symbol
+from src.services.normalization import symbol
 
 FILES={'Ayar.md':'عیار','Alton.md':'آلتون','CharismaAhromi.ETF.md':'اهرم',
        'Etemad.Parsian.ETF.md':'اعتماد','Kahroba.md':'کهربا','Moj.ETF-LR .md':'موج',
@@ -12,6 +13,13 @@ REQUIRED={'<DTYYYYMMDD>','<FIRST>','<HIGH>','<LOW>','<CLOSE>','<VALUE>','<VOL>',
 
 def import_history(engine,directory):
     report=[]
+    references={}
+    snapshots=sorted(Path(directory).glob('MarketWatchPlus-*.md'))
+    if snapshots:
+        for line in snapshots[-1].read_text().splitlines():
+            cells=[c.strip() for c in line.strip('|').split('|')]
+            if line.startswith('|') and len(cells)>=15 and cells[0] and cells[1] and cells[0] not in ('نماد','---'):
+                references[symbol(cells[0])]=cells[1]
     for filename,name in FILES.items():
         path=Path(directory)/filename
         if not path.is_file():continue
@@ -29,6 +37,8 @@ def import_history(engine,directory):
                 'tvol':r['<VOL>'],'tval':r['<VALUE>'],'_data_class':'HISTORICAL','_adjustment_method':'unknown'})
         accepted=rejected=0
         with engine.begin() as conn:
+            if name in references:
+                ensure_symbol(conn,name,{'l18':name,'l30':references[name],'_reference_source':snapshots[-1].name})
             raw_id=conn.execute(raw_responses.insert().values(source='repository',endpoint='repository_import',
                 params={'file':'Data/'+filename,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
                         'data_class':'HISTORICAL','adjustment_method':'unknown'},payload=rows).returning(raw_responses.c.id)).scalar_one()

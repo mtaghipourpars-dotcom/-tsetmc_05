@@ -1,0 +1,1 @@
+{"name":"didban-market-data","version":"3.0.0","private":true,"scripts":{"dev":"python scripts/preview.py","check":"node --check src/web/static/app.js"}}

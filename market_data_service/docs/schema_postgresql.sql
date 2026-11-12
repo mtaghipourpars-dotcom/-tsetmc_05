@@ -182,9 +182,9 @@ CREATE TABLE transactions (
     FOREIGN KEY(raw_id) REFERENCES raw_responses (id)
 );
 
-CREATE INDEX ix_transactions_symbol_date ON transactions (symbol_id, date_shamsi);
-
 CREATE INDEX ix_transactions_symbol_id ON transactions (symbol_id);
+
+CREATE INDEX ix_transactions_symbol_date ON transactions (symbol_id, date_shamsi);
 
 CREATE TABLE shareholders (
     id BIGSERIAL NOT NULL,
@@ -206,9 +206,9 @@ CREATE TABLE shareholders (
     FOREIGN KEY(raw_id) REFERENCES raw_responses (id)
 );
 
-CREATE INDEX ix_shareholders_symbol_date ON shareholders (symbol_id, date_shamsi);
-
 CREATE INDEX ix_shareholders_symbol_id ON shareholders (symbol_id);
+
+CREATE INDEX ix_shareholders_symbol_date ON shareholders (symbol_id, date_shamsi);
 
 CREATE TABLE symbol_snapshots (
     id BIGSERIAL NOT NULL,
@@ -252,9 +252,9 @@ CREATE TABLE etf_nav (
     FOREIGN KEY(raw_id) REFERENCES raw_responses (id)
 );
 
-CREATE INDEX ix_etf_nav_symbol_id ON etf_nav (symbol_id);
-
 CREATE INDEX ix_etf_nav_symbol_date ON etf_nav (symbol_id, date_shamsi);
+
+CREATE INDEX ix_etf_nav_symbol_id ON etf_nav (symbol_id);
 
 CREATE TABLE index_values (
     id BIGSERIAL NOT NULL,
@@ -281,9 +281,9 @@ CREATE TABLE index_values (
     FOREIGN KEY(index_id) REFERENCES indices (id)
 );
 
-CREATE INDEX ix_index_values_symbol_date ON index_values (symbol_id, date_shamsi);
-
 CREATE INDEX ix_index_values_symbol_id ON index_values (symbol_id);
+
+CREATE INDEX ix_index_values_symbol_date ON index_values (symbol_id, date_shamsi);
 
 CREATE TABLE tse_options (
     id BIGSERIAL NOT NULL,
@@ -402,9 +402,9 @@ CREATE TABLE ime_options (
     FOREIGN KEY(raw_id) REFERENCES raw_responses (id)
 );
 
-CREATE INDEX ix_ime_options_symbol_id ON ime_options (symbol_id);
-
 CREATE INDEX ix_ime_options_symbol_date ON ime_options (symbol_id, date_shamsi);
+
+CREATE INDEX ix_ime_options_symbol_id ON ime_options (symbol_id);
 
 CREATE TABLE ime_certificates (
     id BIGSERIAL NOT NULL,
@@ -437,9 +437,9 @@ CREATE TABLE ime_certificates (
     FOREIGN KEY(raw_id) REFERENCES raw_responses (id)
 );
 
-CREATE INDEX ix_ime_certificates_symbol_date ON ime_certificates (symbol_id, date_shamsi);
-
 CREATE INDEX ix_ime_certificates_symbol_id ON ime_certificates (symbol_id);
+
+CREATE INDEX ix_ime_certificates_symbol_date ON ime_certificates (symbol_id, date_shamsi);
 
 CREATE TABLE ime_funds (
     id BIGSERIAL NOT NULL,
@@ -507,9 +507,9 @@ CREATE TABLE ime_physical (
     FOREIGN KEY(raw_id) REFERENCES raw_responses (id)
 );
 
-CREATE INDEX ix_ime_physical_symbol_id ON ime_physical (symbol_id);
-
 CREATE INDEX ix_ime_physical_symbol_date ON ime_physical (symbol_id, date_shamsi);
+
+CREATE INDEX ix_ime_physical_symbol_id ON ime_physical (symbol_id);
 
 CREATE TABLE commodities (
     id BIGSERIAL NOT NULL,
@@ -619,5 +619,46 @@ CREATE INDEX ix_market_observations_instrument_code ON market_observations (inst
 CREATE INDEX ix_market_observations_date_shamsi ON market_observations (date_shamsi);
 
 UPDATE alembic_version SET version_num='0002' WHERE alembic_version.version_num = '0001';
+
+-- Running upgrade 0002 -> 0003
+
+CREATE TABLE collection_jobs (
+    id BIGSERIAL NOT NULL,
+    source VARCHAR(40) NOT NULL,
+    scope VARCHAR(20) NOT NULL,
+    symbols JSONB NOT NULL,
+    options JSONB NOT NULL,
+    status VARCHAR(30) NOT NULL,
+    last_error VARCHAR(150),
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE INDEX ix_collection_jobs_status ON collection_jobs (status);
+
+CREATE TABLE collection_tasks (
+    id BIGSERIAL NOT NULL,
+    job_id BIGINT NOT NULL,
+    task_key VARCHAR(64) NOT NULL,
+    kind VARCHAR(30) NOT NULL,
+    endpoint VARCHAR(200) NOT NULL,
+    symbol VARCHAR(100),
+    params JSONB NOT NULL,
+    status VARCHAR(30) NOT NULL,
+    result JSONB,
+    error_kind VARCHAR(150),
+    attempts INTEGER NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE NOT NULL,
+    PRIMARY KEY (id),
+    UNIQUE (job_id, task_key),
+    FOREIGN KEY(job_id) REFERENCES collection_jobs (id)
+);
+
+CREATE INDEX ix_collection_tasks_job_id ON collection_tasks (job_id);
+
+CREATE INDEX ix_collection_tasks_status ON collection_tasks (status);
+
+UPDATE alembic_version SET version_num='0003' WHERE alembic_version.version_num = '0002';
 
 COMMIT;

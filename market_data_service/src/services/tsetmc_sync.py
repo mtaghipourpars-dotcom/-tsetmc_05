@@ -62,13 +62,14 @@ class TseSync:
                     with conn.begin_nested():
                         if not isinstance(row,dict):raise ValueError('not_object')
                         instrument=row.get('instrument') or {}
-                        code=pick(row,'insCode','id') or params['path'].get('InsCode')
+                        path_values={k.lower():v for k,v in params['path'].items()}
+                        code=pick(row,'insCode','id') or path_values.get('inscode')
                         code=str(code) if code is not None else None
                         name=pick(row,'lVal18AFC','lVal18','lva') or pick(instrument,'lVal18AFC','lVal18')
                         if not name and code:
                             name=conn.execute(select(symbols.c.symbol_l18).where(symbols.c.ins_code==code).limit(1)).scalar_one_or_none()
                         date=pick(row,'dEven','deven','date','dateUpdate')
-                        date=date or params['path'].get('DEven')
+                        date=date or path_values.get('deven')
                         d=jalali_date(date) if date else None
                         h=pick(row,'hEven','hEvenPDrCotVal')
                         tm=clock(str(h).zfill(6)) if h is not None else ''
@@ -83,6 +84,10 @@ class TseSync:
                         if name:
                             ref={'l18':name,'l30':pick(row,'lVal30','lvc') or instrument.get('lVal30')}
                             if code:ref['id']=code
+                            isin=pick(row,'cIsin','cisin') or pick(instrument,'cIsin','cisin')
+                            if isin:ref['isin']=isin
+                            sector=row.get('sector') or instrument.get('sector')
+                            if isinstance(sector,dict):ref['cs']=sector.get('lSecVal')
                             ensure_symbol(conn,name,ref)
                         self.normalize(conn,endpoint,row,name,code,d,tm,raw_id)
                         accepted+=1
