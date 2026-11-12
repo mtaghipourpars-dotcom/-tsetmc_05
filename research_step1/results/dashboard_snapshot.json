@@ -1,0 +1,97 @@
+{
+  "as_of": "2026-11-11",
+  "real_position": null,
+  "predicted_profit": null,
+  "estimated_sale_date": null,
+  "alternatives": [
+    {
+      "symbol": "Alton",
+      "name": "آلتون",
+      "as_of": "2026-11-11",
+      "close": 77292.0,
+      "research_score": 0.010675063359188997,
+      "assumed_capacity_rial": 4298525655.62,
+      "eligible_proxy": true,
+      "corr60": -0.0782544934266366,
+      "queue_verified": false
+    },
+    {
+      "symbol": "Kahroba",
+      "name": "کهربا",
+      "as_of": "2026-11-11",
+      "close": 233344.0,
+      "research_score": 0.00795020704549898,
+      "assumed_capacity_rial": 26860172101.68,
+      "eligible_proxy": true,
+      "corr60": -0.0782544934266366,
+      "queue_verified": false
+    },
+    {
+      "symbol": "Ayar",
+      "name": "عیار",
+      "as_of": "2026-11-11",
+      "close": 668554.0,
+      "research_score": 0.007196317196317192,
+      "assumed_capacity_rial": 344934980658.66003,
+      "eligible_proxy": true,
+      "corr60": -0.0782544934266366,
+      "queue_verified": false
+    },
+    {
+      "symbol": "CharismaAhromi.ETF",
+      "name": "اهرم",
+      "as_of": "2026-11-11",
+      "close": 93736.0,
+      "research_score": null,
+      "assumed_capacity_rial": 7091481863.0,
+      "eligible_proxy": false,
+      "corr60": -0.0782544934266366,
+      "queue_verified": false
+    },
+    {
+      "symbol": "Etemad.Parsian.ETF",
+      "name": "اعتماد پارسیان",
+      "as_of": "2026-11-11",
+      "close": 147041.0,
+      "research_score": null,
+      "assumed_capacity_rial": 96757272870.0,
+      "eligible_proxy": false,
+      "corr60": -0.0782544934266366,
+      "queue_verified": false
+    },
+    {
+      "symbol": "Moj.ETF-LR",
+      "name": "موج",
+      "as_of": "2026-11-11",
+      "close": 122688.0,
+      "research_score": null,
+      "assumed_capacity_rial": 4027636336.59,
+      "eligible_proxy": false,
+      "corr60": -0.0782544934266366,
+      "queue_verified": false
+    },
+    {
+      "symbol": "Shetab.ETF",
+      "name": "شتاب",
+      "as_of": "2026-11-11",
+      "close": 69416.0,
+      "research_score": null,
+      "assumed_capacity_rial": 2090852957.88,
+      "eligible_proxy": false,
+      "corr60": -0.0782544934266366,
+      "queue_verified": false
+    },
+    {
+      "symbol": "Tavan.ETF-LR",
+      "name": "توان",
+      "as_of": "2026-11-11",
+      "close": 89391.0,
+      "research_score": null,
+      "assumed_capacity_rial": 5011478474.9800005,
+      "eligible_proxy": false,
+      "corr60": -0.0782544934266366,
+      "queue_verified": false
+    }
+  ],
+  "live": false
+}

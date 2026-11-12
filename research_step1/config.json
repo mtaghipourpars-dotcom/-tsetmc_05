@@ -1,0 +1,17 @@
+{
+  "snapshot_commit": "015e843e6d20a8b6df9ea96b1d217f7cf7587b78",
+  "capitals_rial": [1000000000, 10000000000, 100000000000],
+  "capital_unit": "IRR; 10 IRR = 1 toman; inferred, not independently verified",
+  "signal_lookback": 3,
+  "hold_sessions": [3, 5, 10],
+  "primary_hold": 5,
+  "participation": 0.01,
+  "train_end": "2024-12-31",
+  "validation_end": "2025-12-31",
+  "test_end": "2026-11-11",
+  "embargo_sessions": 10,
+  "fee_per_side_assumption": 0.0015,
+  "slippage_per_side_assumption": 0.001,
+  "cash_reuse_wait_sessions_assumption": 2,
+  "notice": "Exploratory daily proxy only. Fees, currency, limits, settlement and fills are not historically verified. No queue or profitability certification."
+}

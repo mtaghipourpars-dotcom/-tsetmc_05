@@ -1,0 +1,15 @@
+{
+  "commit": "015e843e6d20a8b6df9ea96b1d217f7cf7587b78",
+  "common_start": "2023-10-29",
+  "common_end": "2026-11-11",
+  "common_sessions": 652,
+  "corr_negative_share": 0.8783783783783784,
+  "corr_latest": -0.0782544934266366,
+  "runs": 159,
+  "snapshot_crosscheck": {
+    "comparisons": 640,
+    "mismatches": 3
+  },
+  "strict_executable_backtest": "BLOCKED: historical limits/book/fees/settlement/adjustments not verified",
+  "paper_trading_approved": false
+}
