@@ -1,0 +1,7 @@
+{
+  "python": "3.12.14",
+  "pandas": "2.2.3",
+  "numpy": "2.3.5",
+  "tests_passed": 5,
+  "test_command": "python -m unittest discover -s research_step1/tests -v"
+}

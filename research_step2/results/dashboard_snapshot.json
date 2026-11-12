@@ -1,0 +1,112 @@
+{
+  "as_of": "2026-11-11",
+  "real_position": null,
+  "realized_profit": null,
+  "forecast_profit": null,
+  "alternatives": [
+    {
+      "symbol": "Alton",
+      "name": "آلتون",
+      "safe_proxy": true,
+      "reason": "",
+      "research_score": null,
+      "hold": null,
+      "capacity_toman_assumed": 429852565.562,
+      "live_recommendation": false,
+      "estimated_profit": null
+    },
+    {
+      "symbol": "Ayar",
+      "name": "عیار",
+      "safe_proxy": true,
+      "reason": "",
+      "research_score": null,
+      "hold": null,
+      "capacity_toman_assumed": 34493498065.866005,
+      "live_recommendation": false,
+      "estimated_profit": null
+    },
+    {
+      "symbol": "CharismaAhromi.ETF",
+      "name": "اهرم",
+      "safe_proxy": false,
+      "reason": "reported_rule_change_quarantine",
+      "research_score": null,
+      "hold": null,
+      "capacity_toman_assumed": 709148186.3,
+      "live_recommendation": false,
+      "estimated_profit": null
+    },
+    {
+      "symbol": "Kahroba",
+      "name": "کهربا",
+      "safe_proxy": true,
+      "reason": "",
+      "research_score": null,
+      "hold": null,
+      "capacity_toman_assumed": 2686017210.168,
+      "live_recommendation": false,
+      "estimated_profit": null
+    },
+    {
+      "symbol": "Moj.ETF-LR",
+      "name": "موج",
+      "safe_proxy": false,
+      "reason": "reported_rule_change_quarantine",
+      "research_score": null,
+      "hold": null,
+      "capacity_toman_assumed": 402763633.65900004,
+      "live_recommendation": false,
+      "estimated_profit": null
+    },
+    {
+      "symbol": "Shetab.ETF",
+      "name": "شتاب",
+      "safe_proxy": false,
+      "reason": "reported_rule_change_quarantine",
+      "research_score": null,
+      "hold": null,
+      "capacity_toman_assumed": 209085295.78800002,
+      "live_recommendation": false,
+      "estimated_profit": null
+    },
+    {
+      "symbol": "Tavan.ETF-LR",
+      "name": "توان",
+      "safe_proxy": false,
+      "reason": "reported_rule_change_quarantine",
+      "research_score": null,
+      "hold": null,
+      "capacity_toman_assumed": 501147847.498,
+      "live_recommendation": false,
+      "estimated_profit": null
+    },
+    {
+      "symbol": "Etemad.Parsian.ETF",
+      "name": "اعتماد پارسیان",
+      "safe_proxy": false,
+      "reason": "reference_income_not_cash",
+      "research_score": null,
+      "hold": null,
+      "capacity_toman_assumed": 9675727287.0,
+      "live_recommendation": false,
+      "estimated_profit": null
+    }
+  ],
+  "live_gate": {
+    "allowed": false,
+    "missing": [
+      "currency_verified",
+      "historical_adjustment_verified",
+      "historical_rules_verified",
+      "order_book_verified",
+      "fee_schedule_verified",
+      "instrument_status_verified",
+      "calendars_verified",
+      "model_promotion_approved",
+      "human_order_confirmation"
+    ],
+    "state": "BLOCKED"
+  },
+  "mode": "HISTORICAL_RESEARCH"
+}

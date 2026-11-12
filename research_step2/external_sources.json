@@ -1,0 +1,29 @@
+[
+  {
+    "path": "S_Mobarakeh.Steel.csv",
+    "source_repository": "alireza-jafari/DeepNet-dataset",
+    "source_commit": "860369ca5b702a03af1851d9fc2e590818f82fea",
+    "git_blob_sha": "7d277506c302ccd4c269c65e113b3c5dd1d1bb32",
+    "role": "historical_descriptive_only",
+    "identity_mapping": "file name inferred; stable instrument code not verified",
+    "redistribution_license_verified": false
+  },
+  {
+    "path": "Iran.Khodro.csv",
+    "source_repository": "alireza-jafari/DeepNet-dataset",
+    "source_commit": "860369ca5b702a03af1851d9fc2e590818f82fea",
+    "git_blob_sha": "49269aafbf4c6ef10a7c6b2bac4f8d4fb8c13cb9",
+    "role": "historical_descriptive_only",
+    "identity_mapping": "file name inferred; stable instrument code not verified",
+    "redistribution_license_verified": false
+  },
+  {
+    "path": "S_I..N..C..Ind..csv",
+    "source_repository": "alireza-jafari/DeepNet-dataset",
+    "source_commit": "860369ca5b702a03af1851d9fc2e590818f82fea",
+    "git_blob_sha": "d43d58cc1ae66ff431c51621c0dba05a98bb205c",
+    "role": "historical_descriptive_only",
+    "identity_mapping": "file name inferred; stable instrument code not verified",
+    "redistribution_license_verified": false
+  }
+]

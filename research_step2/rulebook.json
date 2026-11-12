@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "timezone": "Asia/Tehran",
+  "effective_date_required": true,
+  "announcement_time_required": true,
+  "live_ready": false,
+  "records": [
+    {
+      "instrument_class": "leveraged_equity_etf",
+      "effective_from_reported": "2026-11-07",
+      "lower_limit_pct_reported": -0.06,
+      "upper_limit_pct_reported": 0.06,
+      "source": "https://www.tasnimnews.ir/fa/news/1405/08/01/3730063",
+      "evidence_type": "secondary_report_of_regulator_statement",
+      "official_notice_retrieved": false,
+      "approved_for_execution": false
+    }
+  ],
+  "missing_by_instrument_and_date": [
+    "stable_instrument_id_mapping", "official_price_limits", "tick_size", "min_order_value", "max_order_quantity",
+    "trading_calendar", "session_times", "instrument_status", "auction_rules", "buy_fee", "sell_fee", "tax",
+    "fee_caps", "settlement_cycle", "cross_market_buying_power", "market_maker_obligations", "corporate_actions"
+  ]
+}

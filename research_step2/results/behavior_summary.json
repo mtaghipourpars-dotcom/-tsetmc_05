@@ -1,0 +1,47 @@
+{
+  "yearly": [
+    {
+      "year": 2023,
+      "n": 28,
+      "gold_share": 0.07418305608607123,
+      "equity_share": 0.550498388296714,
+      "income_share": 0.3753185556172146,
+      "gold_equity_corr": 0.3121381465425319,
+      "joint_down_fraction": 0.17857142857142858,
+      "dominant_activity_switches": 9
+    },
+    {
+      "year": 2024,
+      "n": 238,
+      "gold_share": 0.27557208256372734,
+      "equity_share": 0.3992870768085522,
+      "income_share": 0.3251408406277205,
+      "gold_equity_corr": -0.16802723505051584,
+      "joint_down_fraction": 0.20588235294117646,
+      "dominant_activity_switches": 84
+    },
+    {
+      "year": 2025,
+      "n": 231,
+      "gold_share": 0.5750417171568712,
+      "equity_share": 0.2726087577960179,
+      "income_share": 0.15234952504711086,
+      "gold_equity_corr": -0.21722242660453797,
+      "joint_down_fraction": 0.15151515151515152,
+      "dominant_activity_switches": 46
+    },
+    {
+      "year": 2026,
+      "n": 155,
+      "gold_share": 0.6365618690512757,
+      "equity_share": 0.2257573583384823,
+      "income_share": 0.13768077261024209,
+      "gold_equity_corr": -0.17132980064518144,
+      "joint_down_fraction": 0.14193548387096774,
+      "dominant_activity_switches": 27
+    }
+  ],
+  "monthly_observations": 108,
+  "selected_snapshot_rows": 110,
+  "participant_identity_inferred": false
+}
