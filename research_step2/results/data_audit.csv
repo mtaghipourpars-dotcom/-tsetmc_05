@@ -1,0 +1,9 @@
+symbol,rows,start,end,duplicates,invalid,single_price,open_equals_prior_close,comparisons,close_jumps_20pct,vwap_outside_range,max_gap_days
+Alton,825,2023-04-04,2026-11-11,0,1,3,824,824,0,1,35
+Ayar,1982,2018-06-09,2026-11-11,0,1,8,1980,1981,0,1,39
+CharismaAhromi.ETF,1105,2021-12-20,2026-11-11,0,0,81,1104,1104,0,0,83
+Etemad.Parsian.ETF,2753,2015-03-15,2026-11-11,0,0,19,2750,2752,0,0,61
+Kahroba,1248,2021-07-10,2026-11-11,0,1,2,1247,1247,0,1,23
+Moj.ETF-LR,653,2023-10-29,2026-11-11,0,0,113,652,652,0,0,83
+Shetab.ETF,767,2023-05-29,2026-11-11,0,0,95,766,766,0,0,83
+Tavan.ETF-LR,894,2022-11-05,2026-11-11,0,1,88,893,893,0,0,83

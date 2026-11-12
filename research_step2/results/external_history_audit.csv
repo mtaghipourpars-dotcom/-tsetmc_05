@@ -1,0 +1,4 @@
+file,symbol,rows,start,end,invalid,duplicates,sha256,git_blob_sha,adjustment_verified,stable_identity_verified
+S_Mobarakeh.Steel.csv,foolad_candidate,3145,2007-03-11,2021-06-30,0,0,749cebe095be1ac5515c3e2223d1384bfefb7079b2bdeefbf3ea5f508289ea71,7d277506c302ccd4c269c65e113b3c5dd1d1bb32,False,False
+Iran.Khodro.csv,khodro_candidate,4221,2001-03-25,2021-06-30,0,0,6117b49c8216529217cba465a90c0c3e2437f88a668005aa710188e62bbad5e7,49269aafbf4c6ef10a7c6b2bac4f8d4fb8c13cb9,False,False
+S_I..N..C..Ind..csv,fameli_candidate,3179,2007-02-04,2021-06-30,0,0,6e8b58f0f292f3671db600b8f626e7abbc785fd381609a560a4836697459d253,d43d58cc1ae66ff431c51621c0dba05a98bb205c,False,False

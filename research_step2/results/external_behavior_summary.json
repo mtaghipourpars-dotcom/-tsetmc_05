@@ -1,0 +1,8 @@
+{
+  "common_observations": 2524,
+  "start": "2007-05-06",
+  "end": "2021-06-30",
+  "interpretation": "Aggregate activity among three file-name-mapped candidates; not trader identity, net money flow or adjusted return",
+  "raw_redistribution": false,
+  "source": "alireza-jafari/DeepNet-dataset@860369ca5b702a03af1851d9fc2e590818f82fea"
+}

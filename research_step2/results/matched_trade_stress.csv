@@ -1,0 +1,4 @@
+symbol,entry,base_exit,base_net_return,fixed_qty,stress_net_return,stress_exit,remaining,stress_entry_capacity_verified,notice
+Kahroba,2025-10-01,2025-10-15,0.0272508728419929,9624,0.012574824189778733,2025-10-20,0,False,same_quantity_conditioned_on_entry_filled_not_portfolio_return
+Kahroba,2025-12-20,2026-01-04,0.0917416269039574,7974,0.18651883922004764,2026-01-07,0,False,same_quantity_conditioned_on_entry_filled_not_portfolio_return
+Tavan.ETF-LR,2026-01-12,2026-01-28,-0.2323955469620742,25577,-0.27767132044323173,2026-02-01,0,False,same_quantity_conditioned_on_entry_filled_not_portfolio_return
