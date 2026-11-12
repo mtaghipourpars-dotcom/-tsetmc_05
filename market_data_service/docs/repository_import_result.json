@@ -1,0 +1,66 @@
+[
+  {
+    "file": "Ayar.md",
+    "symbol": "عیار",
+    "source": "repository",
+    "data_class": "HISTORICAL",
+    "accepted": 1982,
+    "rejected": 0
+  },
+  {
+    "file": "Alton.md",
+    "symbol": "آلتون",
+    "source": "repository",
+    "data_class": "HISTORICAL",
+    "accepted": 825,
+    "rejected": 0
+  },
+  {
+    "file": "CharismaAhromi.ETF.md",
+    "symbol": "اهرم",
+    "source": "repository",
+    "data_class": "HISTORICAL",
+    "accepted": 1105,
+    "rejected": 0
+  },
+  {
+    "file": "Etemad.Parsian.ETF.md",
+    "symbol": "اعتماد",
+    "source": "repository",
+    "data_class": "HISTORICAL",
+    "accepted": 2753,
+    "rejected": 0
+  },
+  {
+    "file": "Kahroba.md",
+    "symbol": "کهربا",
+    "source": "repository",
+    "data_class": "HISTORICAL",
+    "accepted": 1248,
+    "rejected": 0
+  },
+  {
+    "file": "Moj.ETF-LR .md",
+    "symbol": "موج",
+    "source": "repository",
+    "data_class": "HISTORICAL",
+    "accepted": 653,
+    "rejected": 0
+  },
+  {
+    "file": "Shetab.ETF.md",
+    "symbol": "شتاب",
+    "source": "repository",
+    "data_class": "HISTORICAL",
+    "accepted": 767,
+    "rejected": 0
+  },
+  {
+    "file": "Tavan.ETF-LR.md",
+    "symbol": "توان",
+    "source": "repository",
+    "data_class": "HISTORICAL",
+    "accepted": 894,
+    "rejected": 0
+  }
+]

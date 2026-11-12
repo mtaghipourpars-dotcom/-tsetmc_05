@@ -1,0 +1,148 @@
+[
+  {
+    "name": "brs_lower",
+    "url": "https://api.brsapi.ir/Tsetmc/Index.php",
+    "status": 403,
+    "bytes": 8086,
+    "seconds": 12.44,
+    "content_type": "text/html; charset=UTF-8",
+    "title": "دسترسی مسدود شد | BrsApi \r\n\r\n     \r\n        @font-face {\r\n            font-family: 'Gandom';\r\n      "
+  },
+  {
+    "name": "brs_www_origin",
+    "url": "https://Api.BrsApi.ir/Tsetmc/AllSymbols.php",
+    "status": 403,
+    "bytes": 8086,
+    "seconds": 14.2,
+    "content_type": "text/html; charset=UTF-8",
+    "title": "دسترسی مسدود شد | BrsApi \r\n\r\n     \r\n        @font-face {\r\n            font-family: 'Gandom';\r\n      "
+  },
+  {
+    "name": "tse_www_client",
+    "url": "https://www.tsetmc.com/api/ClientType/GetClientTypeAll",
+    "status": 503,
+    "bytes": 91,
+    "seconds": 9.9,
+    "content_type": "text/plain",
+    "title": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout"
+  },
+  {
+    "name": "tse_bare_client",
+    "url": "https://tsetmc.com/api/ClientType/GetClientTypeAll",
+    "status": 503,
+    "bytes": 91,
+    "seconds": 10.25,
+    "content_type": "text/plain",
+    "title": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout"
+  },
+  {
+    "name": "tse_old_client",
+    "url": "https://old.tsetmc.com/tsev2/data/ClientTypeAll.aspx",
+    "status": 503,
+    "bytes": 91,
+    "seconds": 8.99,
+    "content_type": "text/plain",
+    "title": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout"
+  },
+  {
+    "name": "tse_old_watch",
+    "url": "https://old.tsetmc.com/tsev2/data/MarketWatchInit.aspx",
+    "status": 503,
+    "bytes": 91,
+    "seconds": 8.64,
+    "content_type": "text/plain",
+    "title": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout"
+  },
+  {
+    "name": "tse_export",
+    "url": "https://www.tsetmc.com/tsev2/data/Export-txt.aspx",
+    "status": 503,
+    "bytes": 91,
+    "seconds": 10.53,
+    "content_type": "text/plain",
+    "title": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout"
+  },
+  {
+    "name": "tse_cdn_index",
+    "url": "https://cdn.tsetmc.com/api/Index/GetIndexB1LastAll/SelectedIndexes/1",
+    "status": 503,
+    "bytes": 91,
+    "seconds": 8.28,
+    "content_type": "text/plain",
+    "title": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout"
+  },
+  {
+    "name": "tse_webgw",
+    "url": "https://webgw.tse.ir/InstrumentProvider/api/v1/History/Archive/fa",
+    "status": 503,
+    "bytes": 91,
+    "seconds": 10.77,
+    "content_type": "text/plain",
+    "title": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout"
+  },
+  {
+    "name": "tse_frontend",
+    "url": "https://www.tsetmc.com/",
+    "status": 503,
+    "bytes": 91,
+    "seconds": 9.32,
+    "content_type": "text/plain",
+    "title": "upstream connect error or disconnect/reset before headers. reset reason: connection timeout"
+  },
+  {
+    "name": "brs_home",
+    "url": "https://brsapi.ir/",
+    "status": 200,
+    "bytes": 109168,
+    "seconds": 8.8,
+    "content_type": "text/html; charset=UTF-8",
+    "json_type": null
+  },
+  {
+    "name": "cdn10",
+    "url": "https://cdn10.tsetmc.com/api/ClientType/GetClientTypeAll",
+    "status": 503,
+    "bytes": 98,
+    "content_type": "text/plain"
+  },
+  {
+    "name": "service",
+    "url": "https://service.tsetmc.com/tsev2/data/TseClient2.aspx?t=Instrument&a=0",
+    "status": 503,
+    "bytes": 91,
+    "content_type": "text/plain"
+  },
+  {
+    "name": "soap",
+    "url": "https://service.tsetmc.com/WebService/TseClient.asmx?WSDL",
+    "status": 503,
+    "bytes": 91,
+    "content_type": "text/plain"
+  },
+  {
+    "name": "members",
+    "url": "https://members.tsetmc.com/tsev2/data/InstTradeHistory.aspx?i=35425587644337450&Top=10&A=0",
+    "status": 503,
+    "bytes": 91,
+    "content_type": "text/plain"
+  },
+  {
+    "name": "old_http",
+    "url": "http://old.tsetmc.com/tsev2/data/ClientTypeAll.aspx",
+    "error": "ReadTimeout"
+  },
+  {
+    "name": "cdn_http",
+    "url": "http://cdn.tsetmc.com/api/ClientType/GetClientTypeAll",
+    "error": "ReadTimeout"
+  },
+  {
+    "name": "brs_authorized_key_test",
+    "origin": "https://api.brsapi.ir",
+    "endpoint": "Tsetmc/Index.php",
+    "http_status": 403,
+    "outcome": "account_blocked",
+    "api_key_stored_in_report": false,
+    "further_keyed_calls_stopped": true
+  }
+]

@@ -41,3 +41,13 @@
 4. `docs/UPLOAD_MANIFEST.md`
 5. `skills/MASTER_CATALOG.md`
 
+
+## سرویس داده بازار — ۱۲ نوامبر ۲۰۲۶
+
+بک‌اند قابل اجرا در [market_data_service](market_data_service/README.md) اضافه شده است: دریافت مستقیم TSETMC/TSE، اتصال BrsApi، PostgreSQL، FastAPI، زمان‌بند، Docker و آزمون‌ها. داده موجود Data و موتورهای پژوهشی حفظ شده‌اند.
+
+- [گزارش اجرا و وضعیت واقعی اتصال](market_data_service/docs/LIVE_VALIDATION_FA.md)
+- [کاتالوگ ۱۳۶ مسیر TSETMC/TSE](market_data_service/docs/TSETMC_CATALOG_FA.md)
+- [راهنمای مستندات این بخش](docs/market-data/README.md)
+
+داده واردشده از فایل‌های مخزن HISTORICAL است. اجرای موفق API محلی به معنی دریافت موفق upstream زنده نیست؛ نتایج جداگانه گزارش شده‌اند.

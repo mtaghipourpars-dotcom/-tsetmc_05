@@ -1,0 +1,85 @@
+{
+  "postgres_version": "PostgreSQL 16.2 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 10.2.1 20210130 (Red Hat 10.2.1-11), 64-bit",
+  "local_http_checks": [
+    {
+      "path": "/health",
+      "status": 200,
+      "total": null
+    },
+    {
+      "path": "/docs",
+      "status": 200
+    },
+    {
+      "path": "/openapi.json",
+      "status": 200,
+      "total": null
+    },
+    {
+      "path": "/api/symbols",
+      "status": 200,
+      "total": 8
+    },
+    {
+      "path": "/api/tsetmc/catalog",
+      "status": 200,
+      "total": 136
+    },
+    {
+      "path": "/api/symbols/عیار/history?limit=2",
+      "status": 200,
+      "total": 1982
+    },
+    {
+      "path": "/api/data/price_history?limit=2",
+      "status": 200,
+      "total": 10227
+    }
+  ],
+  "scheduler_started": true,
+  "historical_records_imported": 10227,
+  "live_tsetmc": [
+    {
+      "endpoint": "market_watch",
+      "local_http_status": 502,
+      "result": {
+        "detail": {
+          "kind": "tsetmc_server",
+          "upstream_status": 503
+        }
+      }
+    },
+    {
+      "endpoint": "client_all",
+      "local_http_status": 502,
+      "result": {
+        "detail": {
+          "kind": "tsetmc_circuit_open",
+          "upstream_status": null
+        }
+      }
+    },
+    {
+      "endpoint": "indices",
+      "local_http_status": 502,
+      "result": {
+        "detail": {
+          "kind": "tsetmc_circuit_open",
+          "upstream_status": null
+        }
+      }
+    },
+    {
+      "endpoint": "price_history",
+      "local_http_status": 502,
+      "result": {
+        "detail": {
+          "kind": "tsetmc_circuit_open",
+          "upstream_status": null
+        }
+      }
+    }
+  ],
+  "upstream_verified": false,
+  "services_running_at_check": true
+}

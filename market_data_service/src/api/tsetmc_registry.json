@@ -1,0 +1,2193 @@
+[
+  {
+    "id": "bestlimits_5d44bb32",
+    "name": "bestLimits",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/BestLimits/{insCode}",
+    "query_template": "",
+    "group": "BestLimits",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "bestlimitshistory_b6486262",
+    "name": "bestLimitsHistory",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/BestLimits/{insCode}/{dEven}",
+    "query_template": "",
+    "group": "BestLimits",
+    "parameters": [
+      "insCode",
+      "dEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "bestlimitstop_64b6792f",
+    "name": "bestLimitsTop",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/BestLimits/GetBestLimitsTop/{flow}",
+    "query_template": "",
+    "group": "BestLimits",
+    "parameters": [
+      "flow"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "bestlimitstoppower_a7a54b21",
+    "name": "bestLimitsTopPower",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/BestLimits/GetBestLimitsTopPower/",
+    "query_template": "",
+    "group": "BestLimits",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "bubble_chart_3ad6615e",
+    "name": "Bubble Chart",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/ChartSummary/BubbleChart/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "chartdata_1ab326a4",
+    "name": "chartData",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetChartData/{insCode}/{resolution}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "insCode",
+      "resolution"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "chartdata_daily_59acf75a",
+    "name": "ChartData daily",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetChartData/{InsCode}/D",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "client_all",
+    "name": "ClientType all",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClientType/GetClientTypeAll",
+    "query_template": "",
+    "group": "ClientType",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md",
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "client_history",
+    "name": "ClientType history",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClientType/GetClientTypeHistory/{InsCode}/{DEven}",
+    "query_template": "",
+    "group": "ClientType",
+    "parameters": [
+      "InsCode",
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "clienttype_dae6df5c",
+    "name": "clientType",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClientType/GetClientType/{insCode}/1/0",
+    "query_template": "",
+    "group": "ClientType",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "clienttype_now_626f5761",
+    "name": "ClientType now",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClientType/GetClientType/{InsCode}/1/0",
+    "query_template": "",
+    "group": "ClientType",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "clienttypehistory_59424287",
+    "name": "clientTypeHistory",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClientType/GetClientTypeHistory/{insCode}",
+    "query_template": "",
+    "group": "ClientType",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "clienttypehistorydate_e16fe872",
+    "name": "clientTypeHistoryDate",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClientType/GetClientTypeHistory/{insCode}/{dEven}",
+    "query_template": "",
+    "group": "ClientType",
+    "parameters": [
+      "insCode",
+      "dEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closing_info",
+    "name": "ClosingPrice info today",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceInfo/{InsCode}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingprice_daily_57c13680",
+    "name": "ClosingPrice daily",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceDaily/{InsCode}/{DEven}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "InsCode",
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingprice_daily_list_csv_a8c718d0",
+    "name": "ClosingPrice daily list CSV",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceDailyListCSV/{InsCode}/0",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "text",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingprice_daily_list_top_fb373a94",
+    "name": "ClosingPrice daily list top",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceDailyList/{InsCode}/{Top}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "InsCode",
+      "Top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingprice_history_2a89a433",
+    "name": "ClosingPrice history",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceHistory/{InsCode}/{DEven}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "InsCode",
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingpricedaily_29c32881",
+    "name": "closingPriceDaily",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceDaily/{insCode}/{dEven}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "insCode",
+      "dEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingpricedailyallinst_f22fc53d",
+    "name": "closingPriceDailyAllInst",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceDailyAllInst",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingpricedailycsv_1b42755f",
+    "name": "closingPriceDailyCSV",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceDailyListCSV/{insCode}/{prependCol}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "insCode",
+      "prependCol"
+    ],
+    "format": "text",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingpricedailylist_ce186984",
+    "name": "closingPriceDailyList",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceDailyList/{insCode}/{top}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "insCode",
+      "top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingpricehistory_5f507827",
+    "name": "closingPriceHistory",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceHistory/{insCode}/{dEven}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "insCode",
+      "dEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "closingpriceinfo_ccbb2b54",
+    "name": "closingPriceInfo",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceInfo/{insCode}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "cms_announcements_62d7a0a0",
+    "name": "CMS Announcements",
+    "origin": "webgw.tse.ir",
+    "path": "/cmssite/api/v1/Notice/SimpleList/fa",
+    "query_template": "CategoryId=Announcement&PageSize={n}",
+    "group": "cmssite",
+    "parameters": [
+      "n"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "cms_banner_df60e5e6",
+    "name": "CMS Banner",
+    "origin": "webgw.tse.ir",
+    "path": "/cmssite/api/v1/Banner/List/fa",
+    "query_template": "",
+    "group": "cmssite",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "cms_menu_5a55a3fa",
+    "name": "CMS Menu",
+    "origin": "webgw.tse.ir",
+    "path": "/cmssite/api/v1/Menu/MainMenu/fa",
+    "query_template": "",
+    "group": "cmssite",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "cms_news_a560a853",
+    "name": "CMS News",
+    "origin": "webgw.tse.ir",
+    "path": "/cmssite/api/v1/Notice/SimpleList/fa",
+    "query_template": "CategoryId=News&PageSize={n}",
+    "group": "cmssite",
+    "parameters": [
+      "n"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "codal_publisher_by_symbol_e377c4c2",
+    "name": "Codal publisher by symbol",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetCodalPublisherBySymbol/{Symbol}",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [
+      "Symbol"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "codalattachmentbyrow_ffa0cec7",
+    "name": "codalAttachmentByRow",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetFileAttachmentByMainTableRowId/",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "codalattachmentspecific_450ea71e",
+    "name": "codalAttachmentSpecific",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetAttachmentContentFileByTracingNoAndRowOrder/",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [],
+    "format": "binary",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "codalbyinstrument_f1f3f801",
+    "name": "codalByInstrument",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetPreparedDataByInsCode/{top}/{insCode}",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [
+      "top",
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "codalprepared_021dfaa0",
+    "name": "codalPrepared",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetPreparedData/{top}",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [
+      "top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "codalpublisher_cd849714",
+    "name": "codalPublisher",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetCodalPublisherBySymbol/{symbol}",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [
+      "symbol"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "codalstatement_3bb4a44a",
+    "name": "codalStatement",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetStatementContentByInsCode/{type}/{subType}/{page}/{insCode}",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [
+      "type",
+      "subType",
+      "page",
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "company_state_9371eb36",
+    "name": "Company State",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/CompanyState/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "endpoint_1309e5a4",
+    "name": "بیشترین تأثیر روی شاخص فرابورس",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetInstEffect/0/2/7",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "endpoint_94e03c25",
+    "name": "بیشترین تأثیر روی شاخص کل بورس",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetInstEffect/0/1/7",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "endpoint_b9d5a250",
+    "name": "شاخص‌های منتخب فرابورس",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetIndexB1LastAll/SelectedIndexes/2",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "endpoint_c7b94d45",
+    "name": "نمادهای عضو یک شاخص",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetIndexCompany/{insCode}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md",
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "endpoint_dae602ab",
+    "name": "همه شاخص‌های بورس (منتخب + صنعتی)",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetIndexB1LastAll/All/1",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "endpoint_dcb1143a",
+    "name": "همه شاخص‌های فرابورس (منتخب + صنعتی)",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetIndexB1LastAll/All/2",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "energy_auction_by_id_56b41dd5",
+    "name": "Energy auction by id",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Energy/GetAuctionById/{AuctionId}",
+    "query_template": "",
+    "group": "Energy",
+    "parameters": [
+      "AuctionId"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "energy_auction_trade_by_id_d3a5e5c0",
+    "name": "Energy auction trade by id",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Energy/GetAuctionTradeById/{AuctionId}",
+    "query_template": "",
+    "group": "Energy",
+    "parameters": [
+      "AuctionId"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "energyauctionlist_19c6bb51",
+    "name": "energyAuctionList",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Energy/GetGetAuctionListItemByType/{type}/{top}/{extra}",
+    "query_template": "",
+    "group": "Energy",
+    "parameters": [
+      "type",
+      "top",
+      "extra"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "energyauctionoverview_72bc3f10",
+    "name": "energyAuctionOverview",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Energy/GetAuctionOverview/{flow}",
+    "query_template": "",
+    "group": "Energy",
+    "parameters": [
+      "flow"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "energypoweroverview_e6f88d60",
+    "name": "energyPowerOverview",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Energy/GetPowerOverview/",
+    "query_template": "",
+    "group": "Energy",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "etf_by_inscode_a74c0171",
+    "name": "ETF by inscode",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Fund/GetETFByInsCode/{InsCode}",
+    "query_template": "",
+    "group": "Fund",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "file_attachment_by_row_id_4908c8ae",
+    "name": "File attachment by row id",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetFileAttachmentByMainTableRowId/{MainTableRowId}",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [
+      "MainTableRowId"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "file_attachment_by_tracing_8a50ef0a",
+    "name": "File attachment by tracing",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetFileAttachmentByTracingNo/{TracingNo}",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [
+      "TracingNo"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "fund_detail_0_80c7369d",
+    "name": "Fund detail 0",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Fund/GetFundInDetail/0",
+    "query_template": "",
+    "group": "Fund",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "fund_detail_1_8b9278ce",
+    "name": "Fund detail 1",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Fund/GetFundInDetail/1",
+    "query_template": "",
+    "group": "Fund",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getetfbyinscode_a2127c1f",
+    "name": "GetETFByInsCode",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Fund/GetETFByInsCode/{insCode}",
+    "query_template": "",
+    "group": "Fund",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getfundindetail_8bb52846",
+    "name": "GetFundInDetail",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Fund/GetFundInDetail/{no}",
+    "query_template": "",
+    "group": "Fund",
+    "parameters": [
+      "no"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getfunds_19015120",
+    "name": "GetFunds",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Fund/GetFunds/{type}",
+    "query_template": "",
+    "group": "Fund",
+    "parameters": [
+      "type"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getindexb1lastall_5da642ce",
+    "name": "GetIndexB1LastAll",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetIndexB1LastAll/SelectedIndexes/{flow}",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [
+      "flow"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getindexb1lastday_3f471c63",
+    "name": "GetIndexB1LastDay",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetIndexB1LastDay/{insCode}",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getindexb2history_424e02db",
+    "name": "GetIndexB2History",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetIndexB2History/{insCode}",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getinsteffect_634d8942",
+    "name": "GetInstEffect",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetInstEffect/{extra}/{flow}/{top}",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [
+      "extra",
+      "flow",
+      "top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getinstrumentstatistic_18a5a2c7",
+    "name": "GetInstrumentStatistic",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/MarketData/GetInstrumentStatistic/{insCode}",
+    "query_template": "",
+    "group": "MarketData",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getmsgbyflow_a2fac475",
+    "name": "GetMsgByFlow",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Msg/GetMsgByFlow/{flow}/{top}",
+    "query_template": "",
+    "group": "Msg",
+    "parameters": [
+      "flow",
+      "top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getmsgbyinscode_58e775eb",
+    "name": "GetMsgByInsCode",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Msg/GetMsgByInsCode/{insCode}",
+    "query_template": "",
+    "group": "Msg",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "getsupervisionbyinscode_304c0a86",
+    "name": "GetSupervisionByInsCode",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Supervision/GetSupervisionByInsCode/",
+    "query_template": "",
+    "group": "Supervision",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "history_archive_5bd2d01f",
+    "name": "History Archive",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/History/Archive/fa",
+    "query_template": "InstrumentId={ISIN}",
+    "group": "InstrumentProvider",
+    "parameters": [
+      "ISIN"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "index_live_by_id_fdfae86f",
+    "name": "Index Live By Id",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/IndexLiveById/fa",
+    "query_template": "InstrumentId={InstrumentId}",
+    "group": "InstrumentProvider",
+    "parameters": [
+      "InstrumentId"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "index_spelling_supplied_by_user_84c637c1",
+    "name": "index spelling supplied by user",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetIndexB1LastAll/SelectedIndices/1",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "user message 2026-11-12"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "indices",
+    "name": "شاخص‌های منتخب بورس",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Index/GetIndexB1LastAll/SelectedIndexes/1",
+    "query_template": "",
+    "group": "Index",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "inst_value_all_params_a9f60cfb",
+    "name": "Inst value all params",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/MarketData/GetInstValueAllInstAllParam",
+    "query_template": "",
+    "group": "MarketData",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_calendar_1102aafd",
+    "name": "Instrument calendar",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetInstrumentCalendar/{InsCode}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_client_type_ce88946d",
+    "name": "Instrument Client Type",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/InstrumentClientType/fa",
+    "query_template": "InstrumentId={ISIN}",
+    "group": "InstrumentProvider",
+    "parameters": [
+      "ISIN"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_history_ddd57c97",
+    "name": "Instrument history",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Instrument/GetInstrumentHistory/{InsCode}/{DEven}",
+    "query_template": "",
+    "group": "Instrument",
+    "parameters": [
+      "InsCode",
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_identity_abdee117",
+    "name": "Instrument identity",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Instrument/GetInstrumentIdentity/{InsCode}",
+    "query_template": "",
+    "group": "Instrument",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_info",
+    "name": "Instrument info",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Instrument/GetInstrumentInfo/{InsCode}",
+    "query_template": "",
+    "group": "Instrument",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_search",
+    "name": "Instrument search",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Instrument/GetInstrumentSearch/{Query}",
+    "query_template": "",
+    "group": "Instrument",
+    "parameters": [
+      "Query"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_shortcut_search_3ad87e82",
+    "name": "Instrument Shortcut (Search)",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/InstrumentShortcut/fa",
+    "query_template": "SimpleSearchText={query}&MarketCategoryIds[0]={cat}&PageNumber={n}&PageSize={size}",
+    "group": "InstrumentProvider",
+    "parameters": [
+      "query",
+      "cat",
+      "n",
+      "size"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_slider_0d7a9d04",
+    "name": "Instrument Slider",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/InstrumentSliderQuery/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_slider_by_industry_687425e3",
+    "name": "Instrument Slider By Industry",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/InstrumentSliderQuery/fa",
+    "query_template": "IndustryId={IndustryId}",
+    "group": "InstrumentProvider",
+    "parameters": [
+      "IndustryId"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_state_073c4f54",
+    "name": "Instrument state",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/MarketData/GetInstrumentState/{InsCode}/{DEven}",
+    "query_template": "",
+    "group": "MarketData",
+    "parameters": [
+      "InsCode",
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_state_top_f0d90fa2",
+    "name": "Instrument state top",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/MarketData/GetInstrumentStateTop/{Top}",
+    "query_template": "",
+    "group": "MarketData",
+    "parameters": [
+      "Top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrument_statistic_1122cdea",
+    "name": "Instrument statistic",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/MarketData/GetInstrumentStatistic/{InsCode}",
+    "query_template": "",
+    "group": "MarketData",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrumentcalendar_c3c8068a",
+    "name": "instrumentCalendar",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetInstrumentCalendar/{insCode}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instruments_history_in_day_ee69f513",
+    "name": "Instruments history in day",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetInstrmentsHistoryInDay/{DEven}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "instrumentshistoryinday_94f50e52",
+    "name": "instrumentsHistoryInDay",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetInstrmentsHistoryInDay/{dEven}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "dEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "learning_topics_fff8a405",
+    "name": "Learning topics",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Learning/GetLearningTopics",
+    "query_template": "",
+    "group": "Learning",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md",
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "live_instrument_by_id_60c7d41f",
+    "name": "Live Instrument By Id",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/LiveInstrumentByIdQuery/fa",
+    "query_template": "InstrumentId={ISIN}",
+    "group": "InstrumentProvider",
+    "parameters": [
+      "ISIN"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "live_instrument_summary_by_id_8639f552",
+    "name": "Live Instrument Summary By Id",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/LiveInstrumentSummaryByIdQuery/fa",
+    "query_template": "InstrumentId={ISIN}",
+    "group": "InstrumentProvider",
+    "parameters": [
+      "ISIN"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "market_date_4edcde2d",
+    "name": "Market Date",
+    "origin": "webgw.tse.ir",
+    "path": "/api/v1/PublicData/MarketDate/fa",
+    "query_template": "",
+    "group": "v1",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "market_overview_87bc6818",
+    "name": "Market overview",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/MarketData/GetMarketOverview/{Flow}",
+    "query_template": "",
+    "group": "MarketData",
+    "parameters": [
+      "Flow"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "market_summary_ffdb3a2b",
+    "name": "Market Summary",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/MarketSummary/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "market_watch",
+    "name": "Market watch",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetMarketWatch",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md",
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "market_watch_excel_legacy_bd030c12",
+    "name": "Market watch Excel (legacy)",
+    "origin": "old.tsetmc.com",
+    "path": "/tsev2/excel/MarketWatchPlus.aspx",
+    "query_template": "d=0",
+    "group": "tsev2",
+    "parameters": [],
+    "format": "binary",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketcap_69a6c096",
+    "name": "marketCap",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetMarketCap/",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketmap_27bd3517",
+    "name": "marketMap",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetMarketMap",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketwatch_cash_3dbd6fbd",
+    "name": "MarketWatch Cash",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/MarketWatch/MarketWatchCash/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketwatch_debt_317ceefd",
+    "name": "MarketWatch Debt",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/MarketWatch/MarketWatchDebt/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketwatch_etf_afa61d8f",
+    "name": "MarketWatch ETF",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/MarketWatch/MarketWatchEtf/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketwatch_future_b0a0b362",
+    "name": "MarketWatch Future",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/MarketWatch/MarketWatchFuture/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketwatch_option_7ae026a4",
+    "name": "MarketWatch Option",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/MarketWatch/MarketWatchOption/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketwatch_talmarket_36de1ef4",
+    "name": "MarketWatch TALMarket",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/MarketWatch/MarketWatchTALMarket/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketwatch_tradeoption_29cd9c27",
+    "name": "MarketWatch TradeOption",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/MarketWatch/MarketWatchTradeOption/fa",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "marketwatchexcel_82c464e3",
+    "name": "marketWatchExcel",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetMarketWatchExcel/",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [],
+    "format": "binary",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "messages_by_flow_8539f872",
+    "name": "Messages by flow",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Msg/GetMsgByFlow/{Flow}/{Top}",
+    "query_template": "",
+    "group": "Msg",
+    "parameters": [
+      "Flow",
+      "Top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "messages_by_inscode_b0113d54",
+    "name": "Messages by inscode",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Msg/GetMsgByInsCode/{InsCode}",
+    "query_template": "",
+    "group": "Msg",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "order_book",
+    "name": "BestLimits now",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/BestLimits/{InsCode}",
+    "query_template": "",
+    "group": "BestLimits",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "order_book_history",
+    "name": "BestLimits historical",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/BestLimits/{InsCode}/{DEven}",
+    "query_template": "",
+    "group": "BestLimits",
+    "parameters": [
+      "InsCode",
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "prepared_data_by_inscode_df5986f4",
+    "name": "Prepared data by inscode",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetPreparedDataByInsCode/{Top}/{InsCode}",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [
+      "Top",
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "prepared_data_top_6512c496",
+    "name": "Prepared data top",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Codal/GetPreparedData/{Top}",
+    "query_template": "",
+    "group": "Codal",
+    "parameters": [
+      "Top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "price_adjust_by_flow_b9738537",
+    "name": "Price adjust by flow",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetPriceAdjustByFlow/{Flow}/{Top}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "Flow",
+      "Top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "price_adjustments",
+    "name": "Price adjust list",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetPriceAdjustList/{InsCode}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "price_history",
+    "name": "ClosingPrice daily list all",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetClosingPriceDailyList/{InsCode}/0",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "priceadjustbyflow_aa1de9f3",
+    "name": "priceAdjustByFlow",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetPriceAdjustByFlow/{flow}/{top}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "flow",
+      "top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "priceadjustlist_ab930d53",
+    "name": "priceAdjustList",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetPriceAdjustList/{insCode}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "insCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "related_company_d60b8e1f",
+    "name": "Related company",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetRelatedCompany/{CSecVal}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "CSecVal"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "relatedcompanies_84404573",
+    "name": "relatedCompanies",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetRelatedCompany/{cSecVal}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "cSecVal"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "same_group_company_555f94ca",
+    "name": "Same Group Company ⚠️",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/SameGroupCompany/fa",
+    "query_template": "InstrumentId={ISIN}",
+    "group": "InstrumentProvider",
+    "parameters": [
+      "ISIN"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "same_group_company_query_9476c06e",
+    "name": "Same Group Company Query",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/Instrument/SameGroupCompanyQuery/fa",
+    "query_template": "InstrumentId={ISIN}",
+    "group": "InstrumentProvider",
+    "parameters": [
+      "ISIN"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "sectors_summary_a42d5ff4",
+    "name": "Sectors summary",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/MarketData/GetSectorsSummary",
+    "query_template": "",
+    "group": "MarketData",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "share_change_4e72ef4c",
+    "name": "Share change",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Instrument/GetInstrumentShareChange/{InsCode}",
+    "query_template": "",
+    "group": "Instrument",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "share_change_by_flow_028a8cd6",
+    "name": "Share change by flow",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Instrument/GetInstrumentShareChangeByFlow/{Flow}/{Top}",
+    "query_template": "",
+    "group": "Instrument",
+    "parameters": [
+      "Flow",
+      "Top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "shareholder_changes_all_93a6a707",
+    "name": "Shareholder changes all",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Shareholder/GetShareHolderChanges/false",
+    "query_template": "",
+    "group": "Shareholder",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "shareholder_changes_old_49998b86",
+    "name": "Shareholder changes old",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Shareholder/{InsCode}/{DEven}",
+    "query_template": "",
+    "group": "Shareholder",
+    "parameters": [
+      "InsCode",
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "shareholder_company_list_a4546374",
+    "name": "Shareholder company list",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Shareholder/GetShareHolderCompanyList/{ShareHolderShareID}",
+    "query_template": "",
+    "group": "Shareholder",
+    "parameters": [
+      "ShareHolderShareID"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "shareholder_history_53ca08e8",
+    "name": "Shareholder history",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Shareholder/GetShareHolderHistory/{InsCode}/{DEven}/{Top}",
+    "query_template": "",
+    "group": "Shareholder",
+    "parameters": [
+      "InsCode",
+      "DEven",
+      "Top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "shareholder_last_6876cb23",
+    "name": "Shareholder last",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Shareholder/GetInstrumentShareHolderLast/{InsCode}",
+    "query_template": "",
+    "group": "Shareholder",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "static_data_016c2c3f",
+    "name": "Static data",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/StaticData/GetStaticData",
+    "query_template": "",
+    "group": "StaticData",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md",
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "static_threshold_b78d620e",
+    "name": "Static threshold",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/MarketData/GetStaticThreshold/{InsCode}/{DEven}",
+    "query_template": "",
+    "group": "MarketData",
+    "parameters": [
+      "InsCode",
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "time_b6c34faa",
+    "name": "Time",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/StaticData/GetTime",
+    "query_template": "",
+    "group": "StaticData",
+    "parameters": [],
+    "format": "text",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md",
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "trade_history",
+    "name": "Trade history",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Trade/GetTradeHistory/{InsCode}/{DEven}/false",
+    "query_template": "",
+    "group": "Trade",
+    "parameters": [
+      "InsCode",
+      "DEven"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "trade_intraday_6a8c1d2e",
+    "name": "Trade intraday",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Trade/GetTradeIntraDay/{InsCode}",
+    "query_template": "",
+    "group": "Trade",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "trade_now_c4fc76bf",
+    "name": "Trade now",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Trade/GetTrade/{InsCode}",
+    "query_template": "",
+    "group": "Trade",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "trade_volume_6be4736a",
+    "name": "Trade volume",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/Trade/GetTradeVolume/{InsCode}",
+    "query_template": "",
+    "group": "Trade",
+    "parameters": [
+      "InsCode"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/scripts/test_active_tsetmc_endpoints.py",
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "tradetopmostvisited_5d281cc4",
+    "name": "tradeTopMostVisited",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetTradeTop/MostVisited/{flow}/{top}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "flow",
+      "top"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "tradetopsalafexpired_a7b871df",
+    "name": "tradeTopSalafExpired",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetTradeTop/StandardSalafExpired/{top}/{extra}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "top",
+      "extra"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "tradetopstandardsalaf_6d87f2c4",
+    "name": "tradeTopStandardSalaf",
+    "origin": "cdn.tsetmc.com",
+    "path": "/api/ClosingPrice/GetTradeTop/StandardSalaf/{top}/{extra}",
+    "query_template": "",
+    "group": "ClosingPrice",
+    "parameters": [
+      "top",
+      "extra"
+    ],
+    "format": "json",
+    "references": [
+      "https://github.com/mazaheriMahdi/fis-agent/blob/main/docs/domain/tsetmc-api.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "tv_config_046ac7f8",
+    "name": "TV Config",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/TradingView/config",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "json",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  },
+  {
+    "id": "tv_time_9fc431e2",
+    "name": "TV Time",
+    "origin": "webgw.tse.ir",
+    "path": "/InstrumentProvider/api/v1/TradingView/time",
+    "query_template": "",
+    "group": "InstrumentProvider",
+    "parameters": [],
+    "format": "text",
+    "references": [
+      "https://github.com/BabakEslami/tse-market-data/blob/main/ENDPOINTS.md"
+    ],
+    "verification": "discovered_unverified"
+  }
+]

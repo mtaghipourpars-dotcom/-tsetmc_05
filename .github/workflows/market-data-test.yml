@@ -1,0 +1,32 @@
+name: market-data-tests
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: market_data_service
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: market
+          POSTGRES_PASSWORD: market
+          POSTGRES_DB: market_test
+        ports: ["5432:5432"]
+        options: --health-cmd "pg_isready -U market -d market_test" --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-dev.txt
+      - run: pytest -q
+        env:
+          TEST_POSTGRES_URL: postgresql+psycopg://market:market@localhost:5432/market_test
+      - run: alembic upgrade head
+        env:
+          DATABASE_URL: postgresql+psycopg://market:market@localhost:5432/market_test
+      - run: alembic check
+        env:
+          DATABASE_URL: postgresql+psycopg://market:market@localhost:5432/market_test
