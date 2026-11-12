@@ -11,7 +11,7 @@ from urllib.parse import quote, urlsplit, parse_qsl
 import httpx
 from src.api.client import BrsClient, UpstreamError
 
-CATALOG = {r['id']: r for r in json.loads(Path(__file__).with_name('tsetmc_registry.json').read_text())}
+CATALOG = {r['id']: r for r in json.loads(Path(__file__).with_name('tsetmc_registry.json').read_text(encoding='utf-8'))}
 WATCH_QUERY = {'market': 0, 'paperTypes[0]': 1, 'paperTypes[1]': 2, 'paperTypes[2]': 8,
                'showTraded': 'true', 'withBestLimits': 'true', 'hEven': 0, 'RefID': 0}
 

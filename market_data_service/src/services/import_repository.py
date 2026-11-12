@@ -16,14 +16,14 @@ def import_history(engine,directory):
     references={}
     snapshots=sorted(Path(directory).glob('MarketWatchPlus-*.md'))
     if snapshots:
-        for line in snapshots[-1].read_text().splitlines():
+        for line in snapshots[-1].read_text(encoding='utf-8').splitlines():
             cells=[c.strip() for c in line.strip('|').split('|')]
             if line.startswith('|') and len(cells)>=15 and cells[0] and cells[1] and cells[0] not in ('نماد','---'):
                 references[symbol(cells[0])]=cells[1]
     for filename,name in FILES.items():
         path=Path(directory)/filename
         if not path.is_file():continue
-        content=path.read_text()
+        content=path.read_text(encoding='utf-8')
         lines=[line for line in content.splitlines() if line.startswith('|')]
         header=[s.strip() for s in lines[0].strip('|').split('|')]
         if not REQUIRED <= set(header):raise ValueError('Unexpected source columns: '+filename)

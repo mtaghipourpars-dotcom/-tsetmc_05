@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file='.env', extra='ignore')
+    model_config = SettingsConfigDict(env_file='.env', env_file_encoding='utf-8', extra='ignore')
     brs_api_key: SecretStr = SecretStr('')
     database_url: str = 'postgresql+psycopg://market:market@localhost:5432/market'
     admin_token: SecretStr = SecretStr('')
