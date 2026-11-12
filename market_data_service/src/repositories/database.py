@@ -15,7 +15,7 @@ def json_default(value):
 def engine_for(url: str):
     kwargs = {'json_serializer': lambda o: json.dumps(o, ensure_ascii=False, default=json_default), 'pool_pre_ping': True}
     if url.startswith('sqlite'):
-        kwargs['connect_args'] = {'check_same_thread': False}
+        kwargs['connect_args'] = {'check_same_thread': False, 'timeout': 30}
         if ':memory:' in url:
             from sqlalchemy.pool import StaticPool
             kwargs['poolclass'] = StaticPool
@@ -25,6 +25,8 @@ def engine_for(url: str):
         @event.listens_for(engine, 'connect')
         def foreign_keys(connection, _):
             connection.execute('PRAGMA foreign_keys=ON')
+            connection.execute('PRAGMA busy_timeout=30000')
+            connection.execute('PRAGMA journal_mode=WAL')
     return engine
 
 

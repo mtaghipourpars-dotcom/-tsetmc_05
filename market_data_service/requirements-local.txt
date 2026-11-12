@@ -1,0 +1,10 @@
+fastapi==0.141.1
+uvicorn==0.52.1
+SQLAlchemy==2.0.57
+alembic==1.20.1
+httpx==0.28.1
+pydantic-settings==2.15.0
+APScheduler==3.11.3
+jdatetime==5.3.0
+socksio==1.0.0
+tzdata==2026.6

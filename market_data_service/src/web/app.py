@@ -1,4 +1,5 @@
 from contextlib import asynccontextmanager
+import os
 from decimal import Decimal
 from secrets import compare_digest
 from typing import Annotated, Literal, Any
@@ -27,8 +28,8 @@ class SyncRequest(BaseModel):
     all_pages: bool = False
 
 
-def create_app(settings=None, engine=None, client=None, tse_client=None):
-    settings = settings or Settings()
+def create_app(settings=None, engine=None, client=None, tse_client=None, background=False):
+    settings = settings or Settings(_env_file=os.environ.get('DIDBAN_ENV_FILE', '.env'))
     engine = engine or engine_for(settings.database_url)
     client = client or BrsClient(settings)
     service = SyncService(engine, client)
@@ -41,10 +42,41 @@ def create_app(settings=None, engine=None, client=None, tse_client=None):
     @asynccontextmanager
     async def lifespan(app):
         configure(settings.log_path)
-        yield
-        await client.close()
-        await tse_client.close()
-        engine.dispose()
+        worker = scheduler = None
+        if background:
+            import asyncio
+            import logging
+            from src.scheduler.jobs import Jobs, build_scheduler
+            from src.scheduler.tsetmc_jobs import TseJobs
+            async def collect():
+                while True:
+                    try:
+                        worked = await queue.process_one()
+                    except asyncio.CancelledError:
+                        raise
+                    except Exception:
+                        logging.getLogger('market').error('collector_iteration_failed')
+                        worked = False
+                    await asyncio.sleep(0 if worked else 2)
+            worker = asyncio.create_task(collect())
+            jobs = TseJobs(tse_service, service) if settings.data_provider == 'tsetmc' else Jobs(service)
+            scheduler = build_scheduler(jobs)
+            scheduler.start()
+        try:
+            yield
+        finally:
+            if scheduler:
+                scheduler.shutdown(wait=False)
+            if worker:
+                import asyncio
+                worker.cancel()
+                try:
+                    await worker
+                except asyncio.CancelledError:
+                    pass
+            await client.close()
+            await tse_client.close()
+            engine.dispose()
 
     app = FastAPI(title='Iran Market Data API', version='3.0.0', lifespan=lifespan,
                   description='Read stored BrsApi data. Monetary values are serialized as decimal strings. No upstream calls on GET.')

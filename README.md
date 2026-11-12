@@ -1,3 +1,7 @@
+## اجرای محلی بدون Docker
+
+برای اجرای مستقیم با Python و SQLite، فایل `START_WINDOWS.bat` در ریشه پروژه را اجرا کنید. [راهنمای گام‌به‌گام](INSTALL_NO_DOCKER_FA.md). نصب PostgreSQL لازم نیست. فایل `market_data_service/start-docker.bat` مسیر اختیاری Docker است.
+
 # Iran TSE/IFB Trading Research System
 
 مخزن مرکزی مستندات، داده‌های پژوهشی و کدهای سامانه معاملاتی بازار سرمایه ایران.
