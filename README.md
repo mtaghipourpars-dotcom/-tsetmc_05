@@ -44,6 +44,7 @@
 3. `docs/BACKTEST_METHODOLOGY.md`
 4. `docs/UPLOAD_MANIFEST.md`
 5. `skills/MASTER_CATALOG.md`
+6. [خط فکری و نقشه توسعه محصول](docs/PRODUCT_DEVELOPMENT_ROADMAP_FA.md)
 
 
 ## سرویس داده بازار — ۱۲ نوامبر ۲۰۲۶
