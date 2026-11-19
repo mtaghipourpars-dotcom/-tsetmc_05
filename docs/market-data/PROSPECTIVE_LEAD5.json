@@ -1,0 +1,24 @@
+{
+  "id": "lead5-prospective-1",
+  "registered_on_tehran_date": "2026-11-19",
+  "known_market_rows_through": "2026-11-18",
+  "first_eligible_date": "2026-11-20",
+  "market_timezone": "Asia/Tehran",
+  "window": "First 252 officially open market sessions on or after first_eligible_date. For a prospective label, evidence of collection must follow rule registration. Official closures are not sessions. Missing instrument bars and halts do not extend the window. Capture may be incomplete; no successful capture is asserted by this file.",
+  "symbols": {"اهرم": "17914401175772326", "فملی": "35425587644337450", "فولاد": "46348559193224090", "خودرو": "65883838195688438"},
+  "primary": "اهرم",
+  "candidate": "lead5 with threshold 0.01, the frozen run_research.make_rule",
+  "benchmark": "frozen baseline rebound; cash and 10%-cap buy-and-hold as descriptive controls",
+  "start_state": "Flat with IRR 100000000, preceding valid observations warm features",
+  "input_gate": "Dated exchange session calendar and symbol states; corporate action/time and raw vs adjusted; documented effective costs and coverage; dual-source or integrity/provenance check for closing and FIRST; no unknown gaps resolved by forward fill",
+  "acceptance": {
+    "primary_minimum_closed_trades": 30,
+    "positive_at_base_and_high": true,
+    "beats_frozen_baseline_at_base_and_high": true,
+    "nonnegative_at_stress": true,
+    "max_drawdown_absolute_cap": 0.10,
+    "max_drawdown_no_greater_than_baseline": true,
+    "ledger_reconciled": true
+  },
+  "evaluation": "One evaluation after window and evidence are sealed; early diagnostic data missingness only. Failure stops promotion. No parameter change on this window. No live execution."
+}
