@@ -28,6 +28,8 @@ def match(raw, code, day):
     row = matching[0]
     if not all(type(row.get(f)) in (float, int) and 0 < row[f] < float("inf") for f in fields):
         return "nonpositive_or_invalid_market_fields", None
+    if row["qTotTran5J"] % 1:
+        return "noninteger_volume", None
     if not row["priceMin"] <= row["priceFirst"] <= row["priceMax"]:
         return "invalid_first_price_range", None
     return "candidate_pending_evidence", dict(zip(
@@ -48,10 +50,10 @@ def capture(day, symbol, code, output):
         result["received_at"] = datetime.now(TEHRAN).isoformat()
         if len(raw) > MAX_BYTES:
             raise ValueError("Response above configured capture limit")
-        result["status"], result["observation"] = match(raw, code, day)
         name = f"{code}.json"
         (output / name).write_bytes(raw)
         result.update(raw_file=name, raw_sha256=sha256(raw).hexdigest())
+        result["status"], result["observation"] = match(raw, code, day)
     except HTTPError as exc:
         result.update(status="http_error", http_status=exc.code)
         exc.close()
